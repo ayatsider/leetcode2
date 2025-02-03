@@ -1,0 +1,21 @@
+public class Solution {
+    public bool IsPalindrome(int x) {
+        if(x<0)
+        return false;
+        string strx=x.ToString();
+        int left=0;
+        int right=strx.Length-1;
+        while(left<right)
+        {
+            if(strx[left]!=strx[right])
+            return false;
+            else
+            {
+                left++;
+                right--;
+                
+            }
+        }return true;
+        
+    }
+}
